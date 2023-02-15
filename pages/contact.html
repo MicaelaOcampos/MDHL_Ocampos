@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icono" href="../imagenes/icono_hockey.ico" type="image/x-icon">
-    <title>Home</title>
-</head>
-
-<body>
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <link rel="icon" href="../assets/img/iconoHockey.ico" type="image/x-icon">
+    <title>Contact</title>
+  </head>
+  <body>
     <header>
-        <h1>Mighty Ducks Hockey League</h1>
+      <h1>Mighty Ducks Hockey League</h1>
     </header>
     <nav>
-        <button id="Home_b"><a href="../index.html">Home</a></button>
-        <button id="About_b"><a href="./AboutMDHL.html">About</a></button>
-        <button id="Contact_b">Contact</button>
+      <form action="../pages/index.html">
+        <button id="homeA" type="submit">Home</button>
+      </form>
+      <form action="../pages/about.html">
+        <button id="aboutB" type="submit">About</button>
+      </form>
+      <button id="contactB">Contact</button>
     </nav>
-    <section>
-        <img id="img1" src="../imagenes/design1_image1.jpg" alt="">
-    </section>
-
+    <section id="section1">
+  	  <img id="img1" src="../assets/img/design1Image1.jpg" alt="">
+      <h3>Hockey League</h3>
+  	</section>
     <h2>Contact</h2>
     <main>
-        <img id="logo" src="../imagenes/LogoMightyducks-01.png" alt="">
-        <div>
-            <p>Please email us at <a href="#">mdhl@chihockey.org</a></p>
-            <p>We reply to your email as soon as we can.</p>
-            <img id="hockey3" src="../imagenes/hockey3.jpg" alt="">
-        </div>
+      <img id="logo" src="../assets/img/logoMightyDucks.png" alt="">
+      <div>
+        <p>Please email us at <a href="mailto:mdhl@michockey.org">mdhl@michockey.org</a></p>
+        <p>We reply to your email as soon as we can.</p>
+        <img id="hockey3" src="../assets/img/hockey3.jpg" alt="">
+      </div>
     </main>
-</body>
+    <footer id="footerContact">
+			<h5>Phone:(630) 690-8132</h5>
+			<h5>Email <a href="mailto:michael.randall@chihockey.org">michael.randall@chihockey.org</a></h5>
+		</footer>
+  </body>
 </html>
