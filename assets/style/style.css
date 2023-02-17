@@ -82,6 +82,10 @@ div {
   margin-top: 5%;
 }
 
+iframe {
+  padding: 2%;
+}
+
 #divRules1 {
   display: inline-block;
   position: absolute;
@@ -95,6 +99,13 @@ div {
   position: absolute;
   left: 20%;
   margin-top: 0%;
+}
+
+#divGameInf2 {
+  display: block;
+  position: absolute;
+  left: 20%;
+  margin-top: 95%;
 }
 
 dt {
@@ -126,7 +137,7 @@ li {
   text-justify: inter-word;
 }
 
-#alphaLi {
+.alphaLi {
   text-indent: 20px;
   text-align: justify;
   text-justify: inter-word;
@@ -199,7 +210,7 @@ form {
   display: inline-block;
 }
 
-#buttonBlue {
+.buttonBlue {
   padding: 5px 20px;
   display: inline-block;
   background-color: rgb(44, 118, 255);
@@ -209,6 +220,15 @@ form {
 }
 
 #buttonGreen {
+  padding: 5px 20px;
+  display: inline-block;
+  background-color: rgb(0, 211, 0);
+  text-align: center;
+  cursor: pointer;
+  color: white;
+}
+
+#buttonGreenSubmit {
   padding: 5px 20px;
   display: inline-block;
   background-color: rgb(0, 211, 0);
@@ -276,41 +296,41 @@ input[type="checkbox"] {
   margin-bottom: 5%;
 }
 
-#titleLabel {
+.titleLabel {
   margin-right: 4px;
   font-weight: bold;
   display: table;
 }
 
-#divRegRowText {
+.divRegRowText {
   display: inline-flex;
   position: initial;
   font-size: 14px;
   margin-top: 2%;
 }
 
-#divRegRowText2 {
+.divRegRowText2 {
   display: block;
   position: initial;
   font-size: 14px;
   margin-top: 6%;
 }
 
-#divRegRowText3 {
+.divRegRowText3 {
   display: block;
   position: initial;
   font-size: 14px;
   margin-top: 2%;
 }
 
-#regTitle {
+.regTitle {
   margin-right: 4px;
   display: table;
   font-size: 14px;
   font-weight: bold;
 }
 
-#regText {
+.regText {
   margin-right: 5%;
   margin-left: 5%;
   margin-top: 30px;
@@ -349,7 +369,7 @@ input[type="checkbox"] {
   background-color: #a6f2ff;
   text-align: center;
   display: block;
-  margin-top: 80em;
+  margin-top: 145em;
 }
 
 #footerRules {
@@ -365,5 +385,5 @@ input[type="checkbox"] {
   background-color: #a6f2ff;
   text-align: center;
   display: block;
-  margin-top: 100em;
+  margin-top: 150em;
 }
