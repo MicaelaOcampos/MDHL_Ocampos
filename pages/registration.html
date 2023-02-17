@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <link rel="icon" href="../assets/img/iconoHockey.ico" type="image/x-icon">
+    <title>Hockey League</title>
+  </head>
+
+  <body>
+    <header>
+  	  <h1>Mighty Ducks Hockey League</h1>
+  	</header>
+    <nav>
+      <form action="../index.html">
+        <button id="buttonBlue" type="submit">Home</button>
+      </form>
+      <form action="../pages/about.html">
+        <button id="buttonBlue" type="submit">About</button> 
+      </form>
+      <form action="../pages/contact.html">
+        <button id="buttonBlue" type="submit">Contact</button>
+      </form>      
+      <form action="../pages/game_information.html">
+        <button id="buttonBlue" type="submit">Game Information</button> 
+      </form>
+      <form action="../pages/rules.html">
+        <button id="buttonBlue" type="submit">Rules</button> 
+      </form>      
+      <button id="buttonGreen">Registration</button>
+    </nav>
+    <section id="section1">
+  	  <img id="img1" src="../assets/img/design1Image1.jpg" alt="">
+      <h2>Registration Form</h2>
+  	</section>
+    <main>
+      <form id="regForm" action="/show_data.html">
+        <fieldset>
+          <div id="divRegRowText">
+            <label for="firstName" id="titleLabel">Player's First Name:</label>
+            <input type="text" id="firstName" name="firstName">
+            <label for="lastName" id="titleLabel">Last Name:</label>
+            <input type="text" id="lastName" name="lastName">
+          </div>
+          <div id="divRegRowText">
+            <label for="streetAddress" id="titleLabel">Street Address:</label>
+            <input type="text" id="streetAddress" name="streetAddress">
+          </div>
+          <div id="divRegRowText">
+            <label for="city" id="titleLabel">City:</label>
+            <input type="text" id="city" name="city">
+            <label for="zipCode" id="titleLabel">Zip Code:</label>
+            <input type="text" id="zipCode" name="zipCode">
+          </div>
+          <div id="divRegRowText">
+            <label for="birthDate" id="titleLabel">Birth Date(mm/dd/yyyy):</label>
+            <input type="text" id="birthDate" name="birthDate">
+            <label for="gender" id="titleLabel">Gender:</label>
+            <input type="radio" id="gender" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="gender" name="gender" value="male">
+            <label for="male">Male</label>
+          </div>
+          <div id="divRegRowText">
+            <label id="titleLabel">Grade:</label>
+            <input type="checkbox" id="preSchool" name="preSchool" value="preSchool">
+            <label for="preSchool">Pre-School</label>
+            <input type="checkbox" id="1st" name="1st" value="1st">
+            <label for="1st">1st</label>
+            <input type="checkbox" id="2st" name="2st" value="2st">
+            <label for="2st">2st</label>
+            <input type="checkbox" id="3st" name="3st" value="3st">
+            <label for="3st">3st</label>
+            <input type="checkbox" id="4st" name="4st" value="4st">
+            <label for="4st">4st</label>
+            <input type="checkbox" id="5st" name="5st" value="5st">
+            <label for="5st">5st</label>
+          </div>
+          <div id="divRegRowText2">
+            <div id="divRegRowText3">
+              <label id="titleLabel">Which elementary school do you live near?</label>
+            </div>
+            <div id="divRegRowText3">
+              <label id="titleLabel">Closest School:</label>  
+            </div>
+            <div id="divRegRowText3">
+              <input type="checkbox" id="ajk" name="ajk" value="ajk">
+              <label for="ajk">AJ Katzenmaier</label>
+              <input type="checkbox" id="gb" name="gb" value="gb">
+              <label for="gb">Greenbay</label>
+              <input type="checkbox" id="hay" name="hay" value="hay">
+              <label for="hay">Howard A Yeager</label>
+              <input type="checkbox" id="mph" name="mph" value="mph">
+              <label for="mph">Marjorie P Hart</label>
+              <input type="checkbox" id="ne" name="ne" value="ne">
+              <label for="ne">North Elementary</label>
+              <input type="checkbox" id="se" name="se" value="se">
+              <label for="se">South Elementary</label>
+            </div>
+          </div>
+          <div id="divRegRowText2">
+            <div id="divRegRowText3">
+              <label id="titleLabel">What position(s) do you normally play? (check all that apply)</label>  
+            </div>
+            <div id="divRegRowText3">
+              <input type="checkbox" id="forward" name="forward" value="forward">
+              <label for="forward">Forward</label>
+              <input type="checkbox" id="defense" name="defense" value="defense">
+              <label for="defense">Defense</label>
+              <input type="checkbox" id="midfield" name="midfield" value="midfield">
+              <label for="midfield">Midfield</label>
+              <input type="checkbox" id="goalkeeper" name="goalkeeper" value="goalkeeper">
+              <label for="goalkeeper">Goalkeeper</label>
+            </div>
+          </div>
+          <div id="divRegRowText2">
+            <div id="divRegRowText3">
+              <label id="titleLabel">Uniform Size:</label>
+            </div>
+            <div id="divRegRowText3">
+              <input type="checkbox" id="youthS" name="youthS" value="youthS">
+              <label for="youthS">Youth Smal</label>
+              <input type="checkbox" id="youthM" name="youthM" value="youthM">
+              <label for="youthM">Youth Medium</label>
+              <input type="checkbox" id="youthL" name="youthL" value="youthL">
+              <label for="youthL">Youth Large</label>
+              <input type="checkbox" id="small" name="small" value="small">
+              <label for="small">Small</label>
+              <input type="checkbox" id="medium" name="medium" value="medium">
+              <label for="medium">Medium</label>
+              <input type="checkbox" id="large" name="large" value="large">
+              <label for="large">Large</label>
+              <input type="checkbox" id="extraL" name="extraL" value="extraL">
+              <label for="extraL">Extra-Large</label>
+            </div>
+          </div>
+          <div id="divRegRowText2">
+            <label id="regTitle">Permission to Play</label>
+            <label id="regText">
+            I, the parent or guardian of the minor registrant, agree that the registrant 
+            and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). 
+            In recognizing the possibility of physical injury associated with hockey and 
+            in consideration for the "League" accepting the registrant for its hockey 
+            programs and activities, I hereby release, discharge, and/or otherwire indemnity 
+            MDHL, their employees and associated personnel and volunteers, including the 
+            facilities used for practices and games, against any claim by or no behalf of the 
+            registrnt as a result of the registrant's participation in the programand/orbeing 
+            transported to or from MDHL sponsored activities, which transportation.
+            </label>
+            <label id="regText">
+            By signing below, I hereby agree and authorize the above. In addition, by signing 
+            below, lalso acknowledge that I have read the cancellation policy and agree to its terms.
+            </label>
+          </div>
+          <div id="divRegRowText3">
+            <label for="parentSignature" id="titleLabel">Parent/Guardian Signature:</label>
+            <input type="text" id="parentSignature" name="parentSignature">
+            <label for="date" id="titleLabel">Date:</label>
+            <input type="text" id="date" name="date">
+          </div>
+          <div id="divRegRowText2">
+            <input type="submit" value="submit" id="buttonGreen" />
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer id="footerRegist">
+      <h5>Phone:(630) 690-8132</h5>
+      <h5>Email <a href="mailto:michael.randall@chihockey.org">michael.randall@chihockey.org</a></h5>
+    </footer>
+  </body>
+</html>
+      
+

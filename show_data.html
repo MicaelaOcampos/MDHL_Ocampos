@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <link rel="icon" href="../assets/img/iconoHockey.ico" type="image/x-icon">
+    <title>Hockey League</title>
+  </head>
+
+  <body>
+    <header>
+  	  <h1>Mighty Ducks Hockey League</h1>
+  	</header>
+    <nav>
+      <form action="../index.html">
+        <button id="buttonBlue" type="submit">Home</button>
+      </form>
+      <form action="../pages/about.html">
+        <button id="buttonBlue" type="submit">About</button> 
+      </form>
+      <form action="../pages/contact.html">
+        <button id="buttonBlue" type="submit">Contact</button>
+      </form>      
+      <form action="../pages/game_information.html">
+        <button id="buttonBlue" type="submit">Game Information</button> 
+      </form>
+      <form action="../pages/rules.html">
+        <button id="buttonBlue" type="submit">Rules</button> 
+      </form>      
+      <button id="buttonGreen">Registration</button>
+    </nav>
+    <section id="section1">
+  	  <img id="img1" src="../assets/img/design1Image1.jpg" alt="">
+      <h2>Information Completed</h2>
+  	</section>
+    <main id="regForm">
+      <p align=center>&nbsp;</p>
+      <h1 align=center><font size="+1">The following information has been sent as your feedback:</font></h1>
+      <table border="1" align=center width="226">
+        <tr>
+          <th align="center">Form Field</th>
+          <th align="center">Field Value</th>
+        </tr>
+        <script language="javascript">
+          var args = location.search.substr(1).split('&');
+          for (var i = 0; i < args.length; ++i) {
+            var parts = args[i].split('=');
+            if (parts != null) {
+              var field = parts[0];
+              var value = parts[1];
+              if (value == null) {
+                value = "null"
+              }
+              else {
+                value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+              }
+            
+              document.writeln('<tr><td align="center">' + field + '</td>');
+              document.writeln('<td align="center">' + value + '</td></tr>');
+            }
+          }
+        </script>
+        <noscript>
+          <tr><td>
+            <p>You need to turn on Javascript in your browser.</p>
+            <p>In Microsoft Internet Explorer 4 or greater:</p>
+            <ul>
+              <li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+              <li>Click on the "Security" tab.</li>
+              <li>Click on the "Custom Level" button. (In IE 4, select "Custom" and then click on "Settings...".)</li>
+              <li>Under "Active scripting" make sure "Enable" is selected.</li>
+            </ul>
+            <p>In Netscape version 4 or greater:</p>
+            <ul>
+              <li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+              <li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+              <li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+              <li>Click the <b>OK</b> button.</li>
+            </ul>
+          </td></tr>
+        </noscript>
+      </table>
+    </main>
+  </body>
+</html>
+
