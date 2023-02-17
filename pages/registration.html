@@ -15,19 +15,19 @@
   	</header>
     <nav>
       <form action="../index.html">
-        <button id="buttonBlue" type="submit">Home</button>
+        <button class="buttonBlue" type="submit">Home</button>
       </form>
       <form action="../pages/about.html">
-        <button id="buttonBlue" type="submit">About</button> 
+        <button class="buttonBlue" type="submit">About</button> 
       </form>
       <form action="../pages/contact.html">
-        <button id="buttonBlue" type="submit">Contact</button>
+        <button class="buttonBlue" type="submit">Contact</button>
       </form>      
       <form action="../pages/game_information.html">
-        <button id="buttonBlue" type="submit">Game Information</button> 
+        <button class="buttonBlue" type="submit">Game Information</button> 
       </form>
       <form action="../pages/rules.html">
-        <button id="buttonBlue" type="submit">Rules</button> 
+        <button class="buttonBlue" type="submit">Rules</button> 
       </form>      
       <button id="buttonGreen">Registration</button>
     </nav>
@@ -36,35 +36,35 @@
       <h2>Registration Form</h2>
   	</section>
     <main>
-      <form id="regForm" action="/show_data.html">
+      <form id="regForm" action="/show_data.html" method="get">
         <fieldset>
-          <div id="divRegRowText">
-            <label for="firstName" id="titleLabel">Player's First Name:</label>
+          <div class="divRegRowText">
+            <label for="firstName" class="titleLabel">Player's First Name:</label>
             <input type="text" id="firstName" name="firstName">
-            <label for="lastName" id="titleLabel">Last Name:</label>
+            <label for="lastName" class="titleLabel">Last Name:</label>
             <input type="text" id="lastName" name="lastName">
           </div>
-          <div id="divRegRowText">
-            <label for="streetAddress" id="titleLabel">Street Address:</label>
+          <div class="divRegRowText">
+            <label for="streetAddress" class="titleLabel">Street Address:</label>
             <input type="text" id="streetAddress" name="streetAddress">
           </div>
-          <div id="divRegRowText">
-            <label for="city" id="titleLabel">City:</label>
+          <div class="divRegRowText">
+            <label for="city" class="titleLabel">City:</label>
             <input type="text" id="city" name="city">
-            <label for="zipCode" id="titleLabel">Zip Code:</label>
+            <label for="zipCode" class="titleLabel">Zip Code:</label>
             <input type="text" id="zipCode" name="zipCode">
           </div>
-          <div id="divRegRowText">
-            <label for="birthDate" id="titleLabel">Birth Date(mm/dd/yyyy):</label>
+          <div class="divRegRowText">
+            <label for="birthDate" class="titleLabel">Birth Date(mm/dd/yyyy):</label>
             <input type="text" id="birthDate" name="birthDate">
-            <label for="gender" id="titleLabel">Gender:</label>
-            <input type="radio" id="gender" name="gender" value="female">
-            <label for="female">Female</label>
-            <input type="radio" id="gender" name="gender" value="male">
-            <label for="male">Male</label>
+            <label class="titleLabel">Gender:</label>
+            <input type="radio" id="gender1" name="gender1" value="female">
+            <label>Female</label>
+            <input type="radio" id="gender2" name="gender2" value="male">
+            <label>Male</label>
           </div>
-          <div id="divRegRowText">
-            <label id="titleLabel">Grade:</label>
+          <div class="divRegRowText">
+            <label class="titleLabel">Grade:</label>
             <input type="checkbox" id="preSchool" name="preSchool" value="preSchool">
             <label for="preSchool">Pre-School</label>
             <input type="checkbox" id="1st" name="1st" value="1st">
@@ -78,14 +78,14 @@
             <input type="checkbox" id="5st" name="5st" value="5st">
             <label for="5st">5st</label>
           </div>
-          <div id="divRegRowText2">
-            <div id="divRegRowText3">
-              <label id="titleLabel">Which elementary school do you live near?</label>
+          <div class="divRegRowText2">
+            <div class="divRegRowText3">
+              <label class="titleLabel">Which elementary school do you live near?</label>
             </div>
-            <div id="divRegRowText3">
-              <label id="titleLabel">Closest School:</label>  
+            <div class="divRegRowText3">
+              <label class="titleLabel">Closest School:</label>  
             </div>
-            <div id="divRegRowText3">
+            <div class="divRegRowText3">
               <input type="checkbox" id="ajk" name="ajk" value="ajk">
               <label for="ajk">AJ Katzenmaier</label>
               <input type="checkbox" id="gb" name="gb" value="gb">
@@ -100,11 +100,11 @@
               <label for="se">South Elementary</label>
             </div>
           </div>
-          <div id="divRegRowText2">
-            <div id="divRegRowText3">
-              <label id="titleLabel">What position(s) do you normally play? (check all that apply)</label>  
+          <div class="divRegRowText2">
+            <div class="divRegRowText3">
+              <label class="titleLabel">What position(s) do you normally play? (check all that apply)</label>  
             </div>
-            <div id="divRegRowText3">
+            <div class="divRegRowText3">
               <input type="checkbox" id="forward" name="forward" value="forward">
               <label for="forward">Forward</label>
               <input type="checkbox" id="defense" name="defense" value="defense">
@@ -115,11 +115,11 @@
               <label for="goalkeeper">Goalkeeper</label>
             </div>
           </div>
-          <div id="divRegRowText2">
-            <div id="divRegRowText3">
-              <label id="titleLabel">Uniform Size:</label>
+          <div class="divRegRowText2">
+            <div class="divRegRowText3">
+              <label class="titleLabel">Uniform Size:</label>
             </div>
-            <div id="divRegRowText3">
+            <div class="divRegRowText3">
               <input type="checkbox" id="youthS" name="youthS" value="youthS">
               <label for="youthS">Youth Smal</label>
               <input type="checkbox" id="youthM" name="youthM" value="youthM">
@@ -136,9 +136,9 @@
               <label for="extraL">Extra-Large</label>
             </div>
           </div>
-          <div id="divRegRowText2">
-            <label id="regTitle">Permission to Play</label>
-            <label id="regText">
+          <div class="divRegRowText2">
+            <label class="regTitle">Permission to Play</label>
+            <label class="regText">
             I, the parent or guardian of the minor registrant, agree that the registrant 
             and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). 
             In recognizing the possibility of physical injury associated with hockey and 
@@ -149,19 +149,19 @@
             registrnt as a result of the registrant's participation in the programand/orbeing 
             transported to or from MDHL sponsored activities, which transportation.
             </label>
-            <label id="regText">
+            <label class="regText">
             By signing below, I hereby agree and authorize the above. In addition, by signing 
             below, lalso acknowledge that I have read the cancellation policy and agree to its terms.
             </label>
           </div>
-          <div id="divRegRowText3">
-            <label for="parentSignature" id="titleLabel">Parent/Guardian Signature:</label>
+          <div class="divRegRowText3">
+            <label for="parentSignature" class="titleLabel">Parent/Guardian Signature:</label>
             <input type="text" id="parentSignature" name="parentSignature">
-            <label for="date" id="titleLabel">Date:</label>
+            <label for="date" class="titleLabel">Date:</label>
             <input type="text" id="date" name="date">
           </div>
-          <div id="divRegRowText2">
-            <input type="submit" value="submit" id="buttonGreen" />
+          <div class="divRegRowText2">
+            <input type="submit" value="submit" id="buttonGreenSubmit">
           </div>
         </fieldset>
       </form>
