@@ -14,13 +14,10 @@ main {
 
 #section1 {
   position: relative;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: 380px;
-  background-color: #a6f2ff;
+  padding: 20px;
 }
 
 #section2 {
@@ -34,9 +31,13 @@ main {
 }
 
 #img1 {
-  position: absolute;
-  width: 96vw;
-  height: 350px;
+  position: relative;
+  display: block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 35px;
 }
 
 #logo {
@@ -81,33 +82,19 @@ div {
   margin-top: 5%;
 }
 
-#divUp1 {
+#divRules1 {
   display: inline-block;
   position: absolute;
   left: 20%;
-  margin-top: 5%;
+  margin-top: 2%;
+  margin-right: 20%;
 }
 
-#divDown1 {
+#divGameInf1 {
   display: inline-block;
   position: absolute;
   left: 20%;
-  margin-top: 29%;
-}
-
-#divDown2 {
-  list-style-position: inside;
-}
-
-#divDown2>li {
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-ol {
-  list-style-type: square;
+  margin-top: 0%;
 }
 
 dt {
@@ -121,10 +108,29 @@ dt {
   font-weight: bold;
 }
 
+ol {
+  list-style-type: square;
+  margin-left: 5%;
+}
+
 dd {
   text-indent: 20px;
   text-align: justify;
   text-justify: inter-word;
+  margin-bottom: 5%;
+}
+
+li {
+  text-indent: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#alphaLi {
+  text-indent: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+  list-style-type: lower-alpha;
 }
 
 h1 {
@@ -136,8 +142,7 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 150%;
-  background-color: rgb(52, 208, 255);
+  font-size: 180%;
 }
 
 h3 {
@@ -179,32 +184,22 @@ p {
 }
 
 header {
-  padding-top: 30px;
+  padding: 30px;
   background-color: #a6f2ff;
 }
 
 nav {
   position: absolute;
-  left: 75%;
-  top: 5%;
+  left: 48%;
+  top: 20%;
   z-index: 1;
-  padding-top: 55px;
 }
 
 form {
   display: inline-block;
 }
 
-#home {
-  padding: 5px 20px;
-  display: inline-block;
-  background-color: rgb(0, 211, 0);
-  text-align: center;
-  cursor: pointer;
-  color: white;
-}
-
-#homeA {
+#buttonBlue {
   padding: 5px 20px;
   display: inline-block;
   background-color: rgb(44, 118, 255);
@@ -213,43 +208,7 @@ form {
   color: white;
 }
 
-#aboutA {
-  padding: 5px 20px;
-  display: inline-block;
-  background-color: rgb(0, 211, 0);
-  text-align: center;
-  cursor: pointer;
-  color: white;
-}
-
-#contactA {
-  padding: 5px 20px;
-  display: inline-block;
-  background-color: rgb(44, 118, 255);
-  text-align: center;
-  cursor: pointer;
-  color: white;
-}
-
-#homeB {
-  padding: 5px 20px;
-  display: inline-block;
-  background-color: rgb(44, 118, 255);
-  text-align: center;
-  cursor: pointer;
-  color: white;
-}
-
-#aboutB {
-  padding: 5px 20px;
-  display: inline-block;
-  background-color: rgb(44, 118, 255);
-  text-align: center;
-  cursor: pointer;
-  color: white;
-}
-
-#contactB {
+#buttonGreen {
   padding: 5px 20px;
   display: inline-block;
   background-color: rgb(0, 211, 0);
@@ -277,12 +236,96 @@ td {
   padding: 2rem;
 }
 
+fieldset {
+  padding: 3%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+input[type="text"] {
+  width: 360px;
+  padding: 2px;
+}
+
+input[type="radio"] {
+  margin-left: 20px;
+  margin-right: 4px;
+}
+
+input[type="checkbox"] {
+  margin-left: 20px;
+  margin-right: 4px;
+}
+
+#firstName {
+  margin-right: 35px;
+}
+
+#city {
+  margin-right: 35px;
+}
+
+#birthDate {
+  margin-right: 35px;
+}
+
+#regForm {
+  margin-top: 1%;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 5%;
+}
+
+#titleLabel {
+  margin-right: 4px;
+  font-weight: bold;
+  display: table;
+}
+
+#divRegRowText {
+  display: inline-flex;
+  position: initial;
+  font-size: 14px;
+  margin-top: 2%;
+}
+
+#divRegRowText2 {
+  display: block;
+  position: initial;
+  font-size: 14px;
+  margin-top: 6%;
+}
+
+#divRegRowText3 {
+  display: block;
+  position: initial;
+  font-size: 14px;
+  margin-top: 2%;
+}
+
+#regTitle {
+  margin-right: 4px;
+  display: table;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#regText {
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 30px;
+  display: table;
+  font-size: 14px;
+  text-indent: 20px;
+  text-align: justify;
+}
+
 #footerHome {
   height: 20vh;
   background-color: #a6f2ff;
   text-align: center;
   display: block;
-  margin-top: 107em;
+  margin-top: 30em;
 }
 
 #footerAbout {
@@ -290,7 +333,7 @@ td {
   background-color: #a6f2ff;
   text-align: center;
   display: block;
-  margin-top: 135em;
+  margin-top: 75em;
 }
 
 #footerContact {
@@ -299,4 +342,28 @@ td {
   text-align: center;
   display: block;
   margin-top: 30em;
+}
+
+#footerGame {
+  height: 20vh;
+  background-color: #a6f2ff;
+  text-align: center;
+  display: block;
+  margin-top: 80em;
+}
+
+#footerRules {
+  height: 20vh;
+  background-color: #a6f2ff;
+  text-align: center;
+  display: block;
+  margin-top: 70em;
+}
+
+#footerRegist {
+  height: 20vh;
+  background-color: #a6f2ff;
+  text-align: center;
+  display: block;
+  margin-top: 100em;
 }
